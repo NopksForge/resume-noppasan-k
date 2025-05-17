@@ -3,7 +3,7 @@ import HelloWorld from "../components/HelloWorld";
 
 export default function Work() {
   return (
-    <div className="flex flex-col items-center w-full h-full font-sans bg-gradient-to-r from-teal-200 to-blue-200">
+    <div className="flex flex-col items-center w-full h-screen font-sans bg-gradient-to-r from-teal-200 to-blue-200">
       <div className="flex flex-col justify-center items-center text-blue-600 mt-70 w-3xl">
         <h1 className="text-8xl font-bold">Hi, I'm Arm.</h1>
         <h2 className="mt-3 text-5xl font-bold">A software engineer</h2>
@@ -21,7 +21,7 @@ export default function Work() {
       <div className="mt-20">
         <HelloWorld />
       </div>
-      <div className="flex justify-center items-center mt-20 w-full h-20">
+      <div className="absolute bottom-0 justify-center items-center mt-20 w-full h-20">
         <Footer />
       </div>
     </div>

@@ -18,7 +18,7 @@ export default function HelloWorld() {
   
   return (
     <div 
-      className="flex flex-row justify-center items-center h-60 rounded-md border backdrop-blur-md bg-white/30 border-white/40 w-2xl group hover:shadow-2xl hover:shadow-black/10"
+      className="flex flex-row justify-center items-center h-60 rounded-md border backdrop-blur-md bg-white/30 border-white/40 w-2xl group hover:shadow-2xl hover:shadow-black/10 hover:cursor-pointer"
       onClick={() => setIsClicked(true)}
     >
       <div className={`flex absolute top-0 left-5 flex-row justify-center items-center opacity-0 transition-all duration-700 -center ${isClicked ? '':'group-hover:-top-8 group-hover:opacity-100'}`}>
