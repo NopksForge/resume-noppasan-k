@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center w-full h-full font-sans bg-gradient-to-l from-blue-200 to-purple-200">
+    <div className="flex flex-col items-center w-full h-full font-sans bg-gradient-to-r from-blue-200 to-purple-200">
       <h1 className="text-7xl font-bold text-blue-700 mt-50">Hello World.</h1>
 
       <div className="flex flex-row gap-20 justify-center items-center mt-20 w-4xl">
