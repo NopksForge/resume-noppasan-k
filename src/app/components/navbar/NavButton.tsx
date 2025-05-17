@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation'
+import Link from 'next/link'
 
 interface NavButtonProps {
     text: string;
@@ -9,13 +9,15 @@ interface NavButtonProps {
 
 export default function NavButton({ text, href, isSelected, isWork = false }: NavButtonProps) {
     return (
-        <button className={`rounded-full h-10 w-32 text-blue-500 text-sm font-semibold font-helvetica flex flex-row items-center justify-center ${isSelected ? 'bg-white/50' : ''}`}
-            onClick={() => redirect(href)}
-        >
-            {text} 
-            {isWork && (
-                <div className="justify-center items-center ml-1 w-4 h-4 text-xs font-bold rounded-sm border-blue-500 mt- 1flex border-1"> / </div>
-            )}
-        </button>
+        <Link href={href} className="contents">
+            <button className={`flex overflow-hidden relative flex-row justify-center items-center w-32 h-10 text-sm font-semibold text-blue-500 rounded-full font-helvetica`}>
+                <span className="flex relative z-10 justify-center items-center">
+                    {text} 
+                    {isWork && (
+                        <div className="flex justify-center items-center ml-1 w-4 h-4 text-xs font-bold rounded-sm border border-blue-500"> / </div>
+                    )}
+                </span>
+            </button>
+        </Link>
     );
 }
