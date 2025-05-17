@@ -32,7 +32,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen font-sans bg-gradient-to-r from-purple-200 to-red-200">
+    <div className="flex flex-col justify-center items-center w-full h-screen font-sans">
       <div 
         ref={cardRef}
         className="flex flex-col justify-center h-[450px] font-bold text-white border backdrop-blur-md rounded-4xl w-3xl bg-black/20 border-white/50 transition-transform duration-200 ease-out"

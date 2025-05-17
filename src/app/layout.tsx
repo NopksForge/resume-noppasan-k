@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/NavBar";
 import { Inter } from "next/font/google";
 import localFont from 'next/font/local';
+import TransitionBackground from "./components/TransitionBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,9 +47,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${helvetica.variable} antialiased`}
       >
-          <div className="flex fixed top-10 justify-center items-center w-full">
-            <Navbar />
-          </div>
+        <TransitionBackground />
+        <div className="flex fixed top-10 justify-center items-center w-full">
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>
